@@ -1,0 +1,24 @@
+{
+  "name": "css_with_webpack",
+  "version": "1.0.0",
+  "description": "LEarn CSS basic concept.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mistertandon/css-expert.git"
+  },
+  "keywords": [
+    "Css",
+    "basic",
+    "concept"
+  ],
+  "author": "mistertandon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mistertandon/css-expert/issues"
+  },
+  "homepage": "https://github.com/mistertandon/css-expert#readme"
+}
