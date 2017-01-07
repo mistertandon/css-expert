@@ -5,7 +5,7 @@
         body {
             color: #850021;
             font-size: 17px;
-            font-family: "Times New Roman", Times, serif;
+            font-family: "Times New Roman", Times, serif, monospace;
         }
         
         .fontOverrideClass {
@@ -14,8 +14,10 @@
     </style>
 </head>
 <!-- 
-body styles will inherited by child elements <h2>, <p>.
-fontOverrideClass: Using this class we have override font-size css of body styles in heading.
+font-family: "Times New Roman", Times, serif, monospace;
+
+Note: Browser will try to load first "Times New Roman", If it's not available then browser
+wii go to load "Times" and so on ☻
 -->
 
 <body>
