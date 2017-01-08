@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <style type="text/css">
+        h2.h2Class {
+            color: #850021;
+            font-size: 17px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        p {
+            background-color: #EBFFAD;
+        }
+        
+        p,
+        div {
+            color: #E00000;
+            margin-top: 20px;
+        }
+        
+        .classSelector {
+            background-color: #CCFF33;
+        }
+        
+        .idSelector {
+            background-color: #668CFF;
+        }
+        
+        div.descendentDiv span.childSpan {
+            background-color: #33FF66;
+        }
+        
+        div.descendentDiv span.directChildSpan {
+            background-color: #FFBA1A;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="h2Class">CSS Selectors </h2>
+
+    <p>
+        HTML element selector</br>
+        color:#E00000 class is shared using multiple HTML type css.
+    </p>
+
+    <div class="classSelector">
+        Select HTML element using class selector.
+    </div>
+
+    <div id="idSelector">
+        Select HTML element using ID selector.
+    </div>
+
+    <div class="descendentDiv">
+        <span class="childSpan">
+        Select HTML element using Descendent OR indirect-child selector.</span>
+    </div>
+
+    <div class="descendentDiv">
+        <span class="directChildSpan">
+        Select HTML element using direct child selector.</span>
+    </div>
+
+    <div>
+        Return to <a href="../index.html"> Home </a> page.
+    </div>
+</body>
+
+</html>
