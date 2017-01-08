@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <style type="text/css">
+        h2.h2Class {
+            color: #850021;
+            font-size: 17px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        h3 {
+            display: block;
+            margin-top: 25px;
+            width: 1000px;
+        }
+        
+        ul {
+            border: 2px groove #000066;
+            width: 1000px;
+            height: 85px;
+        }
+        
+        li {
+            border: 2px groove #660000;
+        }
+        
+        ul> li {
+            list-style: none;
+            display: block;
+            width: 70px;
+            height: 50px;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            line-height: 50px;
+            float: left;
+        }
+        
+        ul.oddClass> li:nth-child(odd) {
+            background-color: #66FFFF;
+        }
+        
+        ul.evenClass> li:nth-child(even) {
+            background-color: #99CCFF;
+        }
+        
+        ul.particularNthChildClass> li:nth-child(5) {
+            background-color: #FF99CC;
+        }
+        
+        ul.nthMultiplierChildClass> li:nth-child(3n) {
+            background-color: #BF80FF;
+        }
+        
+        ul.nthMultiplierModifiedChildClass> li:nth-child(3n+ 4) {
+            background-color: #BF80FF;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="h2Class">CSS: nth child selector </h2>
+
+    <h3>CASE 1: Select all odd child || HTML_TAG:nth-child(odd){}</h3>
+    <ul class="oddClass">
+        <li>1st child</li>
+        <li>2nd child</li>
+        <li>3rd child</li>
+        <li>4th child</li>
+        <li>5th child</li>
+        <li>6th child</li>
+        <li>7th child</li>
+        <li>8th child</li>
+        <li>9th child</li>
+        <li>10th child</li>
+    </ul>
+
+    <h3>CASE 2: Select all even child || HTML_TAG:nth-child(even){}</h3>
+    <ul class="evenClass">
+        <li>1st child</li>
+        <li>2nd child</li>
+        <li>3rd child</li>
+        <li>4th child</li>
+        <li>5th child</li>
+        <li>6th child</li>
+        <li>7th child</li>
+        <li>8th child</li>
+        <li>9th child</li>
+        <li>10th child</li>
+    </ul>
+
+    <h3>CASE 3: Select particular number child || HTML_TAG:nth-child(n){}</h3>
+    <ul class="particularNthChildClass">
+        <li>1st child</li>
+        <li>2nd child</li>
+        <li>3rd child</li>
+        <li>4th child</li>
+        <li>5th child</li>
+        <li>6th child</li>
+        <li>7th child</li>
+        <li>8th child</li>
+        <li>9th child</li>
+        <li>10th child</li>
+    </ul>
+
+    <h3>CASE 4: Select every child multiplier of 3 || HTML_TAG:nth-child(3n)</h3>
+    <ul class="nthMultiplierChildClass">
+        <li>1st child</li>
+        <li>2nd child</li>
+        <li>3rd child</li>
+        <li>4th child</li>
+        <li>5th child</li>
+        <li>6th child</li>
+        <li>7th child</li>
+        <li>8th child</li>
+        <li>9th child</li>
+        <li>10th child</li>
+    </ul>
+
+    <h3>
+ CASE 5: Select particular number child, selection msust be start from mentioned number  || HTML_TAG:nth-child(3n + 4){}</br>
+Every child multiplier of 3, child selection numbering must start from 4.
+</h3>
+    <ul class="nthMultiplierModifiedChildClass">
+        <li>1st child</li>
+        <li>2nd child</li>
+        <li>3rd child</li>
+        <li>4th child</li>
+        <li>5th child</li>
+        <li>6th child</li>
+        <li>7th child</li>
+        <li>8th child</li>
+        <li>9th child</li>
+        <li>10th child</li>
+    </ul>
+
+    <div style="width:600px;">Return to <a href="../index.html"> Home </a> page.</div>
+</body>
+
+</html>
