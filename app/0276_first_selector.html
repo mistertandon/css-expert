@@ -8,21 +8,31 @@
             font-family: "Times New Roman", Times, serif;
         }
         
-        p.pClass {
-            color: #850021;
-            font-size: 17px;
-            font-family: "Times New Roman", Times, serif;
+        p.firstLine:first-line {
+            color: #ff0000;
+        }
+        
+        div.firstLetter::first-letter {
+            font-weight: bold;
+            font-size: 18px;
         }
     </style>
 </head>
 
 <body>
-    <h2 class="h2Class">CSS font properties </h2>
-		<h3>font-size few options: xx-small, x-small, small, medium, large, x-large, xx-large.</h3>
-    <p class="pClass">
+    <h2 class="h2Class">CSS: not selector </h2>
+    <p class="firstLine">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-        Ipsum has been the industry's standard dummy text ever since the 1500s.
+        Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book.
     </p>
+    <div class="firstLetter">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+        Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book.
+    </div>
 
     Return to <a href="../index.html"> Home </a> page.
 </body>
