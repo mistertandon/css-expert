@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <style type="text/css">
+        h2.h2Class {
+            color: #850021;
+            font-size: 17px;
+            font-family: "Times New Roman", Times, serif;
+            margin: 5px;
+        }
+        
+        .inlineIntoBlockClass {
+            border: 2px solid black;
+            margin: 5px;
+display:block;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="h2Class">CSS : Inline elements converted into block element. </h2>
+    <h2 class="h2Class">H2 Html element: Block element. </h2>
+    <span class="inlineIntoBlockClass">SPAN - i: Inline first element, converted into block element.</span>
+    <span class="inlineIntoBlockClass">SPAN - ii: Inline second element, converted into block element</span>
+    <img class="inlineIntoBlockClass" src="../images/01demo.jpg">
+    <div>
+        <ul>
+            <li>Inline SPAN html element didn't have impact of margin-top and margin-bottom.</li>
+            <li>Image inline HTML element having strange effect, as it is inline HTML
+                element, still have impact of margin-top and margin-bottom.</li>
+            <li>Image inline HTML element create margin-top and margin-bottom area
+                with reference to only itself border boundry, not merging neighbour
+                element margin area.</li>
+            <li>Block element merge their margin-top and marging-bottom with other
+                HTML block element.</li>
+        </ul>
+    </div>
+    <div>Return to <a href="../index.html"> Home </a>page.</div>
+</body>
+
+</html>
