@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <style type="text/css">
+        h2.h2Class {
+            color: #850021;
+            font-size: 17px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        div {
+            border: 2px groove #828282;
+            width: 250px;
+            height: 100px;
+            margin: 25px;
+            text-align: center;
+        }
+        
+        .translate {
+            -ms-transform: translate(50px, 20px);
+            -webkit-transform: translate(50px, 20px);
+            transform: translate(50px, 20px);
+        }
+        
+        .translateX {
+            -ms-transform: translateX(50px);
+            -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+        }
+        
+        .translateY {
+            -ms-transform: translateY(20px);
+            -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="h2Class">CSS: transform with translate.</h2>
+
+    <div class="translate">
+        .translate{ transform:translate(50px, 20px); }
+
+    </div>
+
+    <div class="translateX">
+        .translateX{ transform:translateX(50px); }
+
+    </div>
+
+    <div class="translateY">
+        .translateY{ transform:translateY(20px); }
+
+    </div>
+
+    <p>
+        Return to <a href="../index.html"> Home </a> page.
+    </p>
+</body>
+
+</html>
