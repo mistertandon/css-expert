@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta type="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .container {
+      width: 100%;
+      max-width: 970px;
+    }
+
+    .container__margin {
+      margin: 0 auto;
+    }
+
+    .container__flex {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    .c1 {
+      background-color: #ededed;
+    }
+
+    .c2 {
+      background-color: #FFD966;
+    }
+
+    .c3 {
+      background-color: #99E6FF;
+    }
+
+    .c4 {
+      background-color: #ECB3FF;
+    }
+
+    .c1,
+    .c2 {
+      width: 50%;
+    }
+
+    .heading__text {
+      text-align: center;
+    }
+
+    .heading,
+    .c3,
+    .c4 {
+      width: 100%;
+    }
+
+    .height__i {
+      min-height: 200px;
+    }
+
+    .height__ii {
+      min-height: 400px;
+    }
+
+    @media only screen and (max-width:480px) {
+
+      .container {
+        width: 100%;
+      }
+      .container__margin {
+        margin: 0 auto;
+      }
+      .container__flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .c1,
+      .c2,
+      .c3,
+      .c4 {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (min-width:481px) and (max-width:768px) {
+
+      .container {
+        width: 100%;
+      }
+      .container__margin {
+        margin: 0 auto;
+      }
+      .container__flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .c1,
+      .c2 {
+        width: 50%;
+      }
+
+      .c3,
+      .c4 {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="container container__margin container__flex">
+      <h2 class="heading heading__text">Layout Shifter design pattern</h2>
+      <div class="c1 height__ii">
+        c1
+      </div>
+      <div class="c2 height__ii">
+        <div class="c3 height__i">
+          c3
+        </div>
+        <div class="c4 height__i">
+          c4
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
