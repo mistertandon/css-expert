@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 1.2em;
+            font-family: "Times New Roman", Times, serif;
+            height: 100%;
+            width: 100%;
+        }
+
+        div,
+        main,
+        h2,
+        section {
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes clockwiseSpinner {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes antiClockwiseSpinner {
+            from {
+                transform: rotate(360deg);
+            }
+            to {
+                transform: rotate(0deg);
+            }
+        }
+
+        .spin_clockwise {
+            width: 20%;
+            margin: 0px auto;
+            animation: clockwiseSpinner 5s linear infinite;
+            transform-origin: 50% 320px;
+        }
+        .spin_anticlockwise {
+            animation: antiClockwiseSpinner 5s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>CSS: Animation part II </h2>
+            <div class="spin_clockwise">
+                <img class="spin_anticlockwise" src="./../images/smiley_01.jpg" alt="Smiley emocation">
+            </div>
+            <div>
+                Return to <a href="../index.html"> Home </a> page.
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
