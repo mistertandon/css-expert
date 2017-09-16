@@ -2,13 +2,13 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 0px;
 }
 
 .grid{
     max-width: 980px;
     margin: 0px auto;
 }
+
 .row {
   width:100%;
   display: flex;
@@ -50,6 +50,7 @@
 .col-12{
   width:99.9%;
 }
+
 body, html{
   margin: 0;
   padding: 0;
@@ -61,7 +62,7 @@ body{
   font-family: 'Special Elite', cursive;
   color: #001A33;
 }
-div, h1, h2, h3, h4, h5, h6, p{
+div, h1, h2, h3, h4, h5, h6, p, span, article{
   margin: 0;
   padding: 0;  
 }
