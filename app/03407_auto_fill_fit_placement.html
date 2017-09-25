@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta type="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./../app/assets/css/style.reset.css">
+  <style>
+    * {
+      border: 1px solid #000000;
+    }
+
+    #container_auto_fill {
+      width: 90%;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: #c7c7c7;
+      display: grid;
+      grid-column-gap: 10px;
+      grid-row-gap: 5px;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      grid-template-rows: 100px;
+      grid-auto-columns: 50px;
+    }
+
+    #container_auto_fit {
+      width: 90%;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: #c7c7c7;
+      display: grid;
+      grid-column-gap: 10px;
+      grid-row-gap: 5px;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-rows: 100px;
+      grid-auto-columns: 50px;
+    }
+
+    .items {
+      border: 1px solid #000000;
+      border-radius: 5px;
+    }
+
+    .item__1 {
+      background-color: #ff0000;
+    }
+
+    .item__2 {
+      background-color: #00ff00;
+    }
+
+    .item__3 {
+      background-color: #0000ff;
+    }
+
+    .item__4 {
+      background-color: #ffff00;
+    }
+
+    .item__5 {
+      background-color: #00ffff;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h2 class="heading heading__text">Css Grid Fr Unit - II</h2>
+    <div id="container_auto_fill">
+      <div class="items item__1">auto fill demo</div>
+      <div class="items item__2">auto fill demo</div>
+      <div class="items item__3">auto fill demo</div>
+      <div class="items item__4">auto fill demo</div>
+      <div class="items item__5">auto fill demo</div>
+      <div class="items item__1">auto fill demo</div>
+      <div class="items item__2">auto fill demo</div>
+      <div class="items item__3">auto fill demo</div>
+      <div class="items item__4">auto fill demo</div>
+      <div class="items item__5">auto fill demo</div>
+    </div>
+    <div id="container_auto_fit">
+      <div class="items item__1">auto fit demo</div>
+      <div class="items item__2">auto fit demo</div>
+      <div class="items item__3">auto fit demo</div>
+      <div class="items item__4">auto fit demo</div>
+      <div class="items item__5">auto fit demo</div>
+      <div class="items item__1">auto fit demo</div>
+      <div class="items item__2">auto fit demo</div>
+      <div class="items item__3">auto fit demo</div>
+      <div class="items item__4">auto fit demo</div>
+      <div class="items item__5">auto fit demo</div>
+    </div>
+  </main>
+</body>
+
+</html>
